@@ -1,3 +1,11 @@
+@import './settings';
+
 html {
-  background-color: rebeccapurple;
+  background-color: $color-background;
+  color: $color-text-primary;
+  font-family: $font-primary;
+}
+
+h1 {
+  font-family: $font-accent;
 }
