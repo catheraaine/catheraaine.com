@@ -3,6 +3,7 @@
     "stylelint-config-standard-scss"
   ],
   "rules": {
-    "string-quotes": "double"
-   }
+    "value-keyword-case": null,
+    "string-quotes": null
+  }
  }

@@ -1,0 +1,6 @@
+@import './settings';
+
+@mixin holographic-border($background-color: $background-primary, $border-size: 0.25rem) {
+  background: linear-gradient($background-color, $background-color) padding-box, $gradient-holographic border-box;
+  border: $border-size solid transparent;
+}

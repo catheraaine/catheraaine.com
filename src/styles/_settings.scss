@@ -1,16 +1,27 @@
 // Fonts
-
+/* stylelint-disable-next-line import-notation */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Domine:wght@400;700&display=swap');
 
 $font-primary: 'Catamaran', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-accent: 'Domine', 'Times New Roman', serif;
 
 // Colors
-
 $color-background: black;
 $color-text-primary: white;
 
-// Gradient
+// Gradients
+$gradient-holographic: linear-gradient(
+  135deg,
+  #dee6ee 0%,
+  #d6c9ed 5%,
+  #f3b9fb 10%,
+  #f9d9d9 18%,
+  #f8e8cb 35%,
+  #74fbc3 60%,
+  #a6adfd 76%,
+  #f4cac8 84%,
+  #faf1e4 92%,
+  #f9f7f4 100%
+);
 
 // Borders
-
