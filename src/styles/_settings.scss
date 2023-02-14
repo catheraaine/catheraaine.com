@@ -6,17 +6,23 @@ $font-primary: 'Catamaran', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san
 $font-accent: 'Domine', 'Times New Roman', serif;
 
 // Colors
-$color-background: black;
-$color-text-primary: white;
+$color-blush: #edaef5;
+$color-midnight: #102436;
+$color-gilded: #efd39f;
+$color-silvered: #dee6ee;
+
+$color-background: $color-midnight;
+$color-text-primary: $color-silvered;
+$color-text-accent: $color-blush;
 
 // Gradients
 $gradient-holographic: linear-gradient(
   135deg,
-  #dee6ee 0%,
+  $color-silvered 0%,
   #d6c9ed 5%,
-  #f3b9fb 10%,
+  $color-blush 10%,
   #f9d9d9 18%,
-  #f8e8cb 35%,
+  $color-gilded 35%,
   #74fbc3 60%,
   #a6adfd 76%,
   #f4cac8 84%,
