@@ -1,9 +1,9 @@
-@import './settings';
-@import './elements';
-
+@import 'settings';
+@import 'elements';
 
 // Components
-@import './component.page-header';
-
+@import 'component.page';
+@import 'component.navigation';
+@import 'component.page-header';
 
 // Utilities

@@ -1,3 +1,31 @@
+@use 'mixins';
+
 .page-header {
-  color: $color-blush;
+  @include mixins.twelve-col-grid();
+
+  &__bottom-left {
+    grid-column: 1 / span 4;
+  }
+  &__top-right {
+    grid-column: 5 / span 8;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__decorative-image {
+    @include mixins.holographic-border($background-color: $color-background);
+    border-radius: $border-radius-right-top;
+    width: 33rem;
+    height: 40rem;
+    padding: 0;
+    margin-right: 3rem;
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0rem;
+      height: 118%;
+      display: block;
+    }
+  }
 }

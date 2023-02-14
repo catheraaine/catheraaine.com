@@ -1,6 +1,16 @@
 @import './settings';
 
-@mixin holographic-border($background-color: $background-primary, $border-size: 0.25rem) {
+@mixin holographic-border($background-color: $color-background, $border-size: 0.25rem) {
   background: linear-gradient($background-color, $background-color) padding-box, $gradient-holographic border-box;
   border: $border-size solid transparent;
+}
+
+@mixin twelve-col-grid(){
+  display: grid;
+  gap: 0 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (min-width: 28rem) {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }

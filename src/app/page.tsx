@@ -1,10 +1,12 @@
-import { PageHeader } from "@/components/pageHeader";
+import { PageHeader, Navigation } from "@/components/";
 
 
 export default function Home() {
   return (
     <>
-    <PageHeader pageTitle="Catherine's cool Website" />
+    <Navigation />
+    <div className="page">
+      <PageHeader pageTitle="Catherine's cool Website" />
       <main>
         <p>Sam... I'm glad you are with me. Courageous shan't prosperous flatten dampens make-believe creep golden Mordor's course haste risen! Stead comings northeast Barahir approaches towers gotta thread. Cousin caretaker cake sorceress demanding bones Fells eleventh-one pierced mortal relative strayed.</p>
         <h2>Resting pursuit royal regroup Barad-dûr unfair.</h2>
@@ -28,6 +30,7 @@ export default function Home() {
         <h3>Blockheaded Boffins brigands keepsakes suffer bound sung!</h3>
         <p>It must be taken deep into Mordor and cast back into the fiery chasm from whence it came. Graveyard they've Denethor fire-breathing deal circus that's. Raven lies freedom Understand tollgate offense flowers accept further aloft guards no.</p>
       </main>
+    </div>
     </>
   )
 }
