@@ -4,6 +4,7 @@
   ],
   "rules": {
     "value-keyword-case": null,
-    "string-quotes": null
+    "string-quotes": null,
+    "declaration-block-no-redundant-longhand-properties": null
   }
  }

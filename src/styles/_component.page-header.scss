@@ -3,7 +3,7 @@
 .page-header {
   $bp-name-goes-inline: 39.375rem;
 
-  @include mixins.twelve-col-grid();
+  @include mixins.twelve-col-grid;
 
   grid-template-rows: repeat(2, 1fr);
   margin-top: 2rem;
@@ -61,7 +61,7 @@
     img {
       position: absolute;
       right: 0;
-      bottom: 0rem;
+      bottom: 0;
       height: 108%;
       display: block;
     }
