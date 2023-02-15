@@ -2,11 +2,14 @@ interface PAGE_HEADER_PROPS {
   pageTitle: string,
 }
 
-export const PageHeader = ({pageTitle}: PAGE_HEADER_PROPS) => {
+export const PageHeader = () => {
   return (
     <header className="page-header">
       <div className="page-header__bottom-left">
-        <h1>{pageTitle}</h1>
+        <h1 className="page-header__name">
+          <div>Catherine</div>
+          <div>Meade</div>
+        </h1>
       </div>
 
       <div aria-hidden="true" className="page-header__top-right">

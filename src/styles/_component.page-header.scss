@@ -2,15 +2,22 @@
 
 .page-header {
   @include mixins.twelve-col-grid();
+  margin-top: 2rem;
 
   &__bottom-left {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
+
   &__top-right {
-    grid-column: 5 / span 8;
+    grid-column: 7 / span 8;
     display: flex;
     justify-content: flex-end;
   }
+
   &__decorative-image {
     @include mixins.holographic-border($background-color: $color-background);
     border-radius: $border-radius-right-top;
@@ -26,6 +33,17 @@
       bottom: 0rem;
       height: 118%;
       display: block;
+    }
+  }
+
+  &__name {
+    font-size: 8rem;
+    line-height: 1.1;
+    margin: 0;
+    color: $color-text-accent;
+
+    div:last-of-type {
+      text-align: right;
     }
   }
 }

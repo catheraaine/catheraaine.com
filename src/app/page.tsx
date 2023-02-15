@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <Navigation />
     <div className="page">
-      <PageHeader pageTitle="Catherine's cool Website" />
+      <PageHeader />
     </div>
     </>
   )
