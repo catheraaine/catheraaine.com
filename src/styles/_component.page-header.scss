@@ -1,49 +1,105 @@
 @use 'mixins';
 
 .page-header {
+  $bp-name-goes-inline: 39.375rem;
+
   @include mixins.twelve-col-grid();
+
+  grid-template-rows: repeat(2, 1fr);
   margin-top: 2rem;
 
+  @media (min-width: $bp-col-4-to-12) {
+    grid-template-rows: repeat(1, 1fr);
+  }
+
   &__bottom-left {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 4;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+
+    @media (min-width: $bp-name-goes-inline) {
+      div {
+        display: inline;
+      }
+    }
+
+    @media (min-width: $bp-col-4-to-12) {
+      grid-column: 1 / span 6;
+      grid-row-start: 1;
+      justify-content: flex-end;
+
+      div {
+        display: block;
+      }
+    }
   }
 
   &__top-right {
-    grid-column: 7 / span 8;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 1 / span 4;
+
+    @media (min-width: $bp-col-4-to-12) {
+      grid-column: 7 / span 8;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   &__decorative-image {
     @include mixins.holographic-border($background-color: $color-background);
+
     border-radius: $border-radius-right-top;
-    width: 33rem;
-    height: 40rem;
+    width: 11rem;
+    height: 15rem;
     padding: 0;
-    margin-right: 3rem;
     position: relative;
+    margin: 0 auto;
 
     img {
       position: absolute;
       right: 0;
       bottom: 0rem;
-      height: 118%;
+      height: 108%;
       display: block;
+    }
+
+    @media (min-width: 31.25rem) {
+      width: 25rem;
+      height: 27rem;
+
+      img {
+        height: 118%;
+      }
+    }
+
+    @media (min-width: $bp-col-4-to-12) {
+      width: 33rem;
+      height: 40rem;
+      margin: 0;
     }
   }
 
   &__name {
-    font-size: 8rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin: 0;
     color: $color-text-accent;
+    text-align: center;
 
-    div:last-of-type {
-      text-align: right;
+    @media (min-width: $bp-col-4-to-12) {
+      font-size: 6rem;
+      text-align: left;
+
+      div:last-of-type {
+        text-align: right;
+      }
+    }
+
+    @media (min-width: 82rem) {
+      font-size: 8rem;
     }
   }
 }

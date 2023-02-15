@@ -10,7 +10,7 @@
   gap: 0 1.5rem;
   grid-template-columns: repeat(4, 1fr);
 
-  @media (min-width: 28rem) {
+  @media (min-width: $bp-col-4-to-12) {
     grid-template-columns: repeat(12, 1fr);
   }
 }

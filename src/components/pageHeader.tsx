@@ -8,7 +8,7 @@ export const PageHeader = () => {
       <div className="page-header__bottom-left">
         <h1 className="page-header__name">
           <div>Catherine</div>
-          <div>Meade</div>
+          <div>&nbsp;Meade</div>
         </h1>
       </div>
 

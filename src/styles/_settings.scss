@@ -33,5 +33,9 @@ $gradient-holographic: linear-gradient(
 
 // Borders
 
-$border-radius-right-top: 0 4rem 0 4rem;
-$border-radius-left-top: 4rem 0 4rem 0;
+$border-radius-right-top: 0 3rem 0 3rem;
+$border-radius-left-top: 3rem 0 3rem 0;
+
+// Breakpoints
+
+$bp-col-4-to-12: 68rem;
