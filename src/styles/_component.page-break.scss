@@ -1,0 +1,19 @@
+.page-break {
+  margin: 4rem auto;
+  border: 0;
+  background: $gradient-holographic;
+  height: 0.25rem;
+  width: 0;
+  animation: grow-from-center 1500ms ease-out forwards;
+}
+
+@keyframes grow-from-center {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+
