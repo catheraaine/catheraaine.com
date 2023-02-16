@@ -84,12 +84,16 @@
   }
 
   &__name {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     margin: 0;
     color: $color-text-accent;
     text-align: center;
     width: 100%;
+
+    @media (min-width: 24rem) {
+      font-size: 4rem;
+    }
 
     @media (min-width: $bp-col-4-to-12) {
       font-size: 6rem;
