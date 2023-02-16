@@ -14,3 +14,10 @@
     grid-template-columns: repeat(12, 1fr);
   }
 }
+
+@mixin custom-focus() {
+  &:focus {
+    outline-offset: 0.25rem;
+    outline: thick double $color-focus;
+  }
+}

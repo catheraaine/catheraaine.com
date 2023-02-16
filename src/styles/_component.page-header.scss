@@ -40,6 +40,7 @@
 
   &__top-right {
     grid-column: 1 / span 4;
+    z-index: -9999; // fixes an issue where the image is larger than the container and blocks links
 
     @media (min-width: $bp-col-4-to-12) {
       grid-column: 7 / span 8;
