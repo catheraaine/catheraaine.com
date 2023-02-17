@@ -3,13 +3,11 @@
 .social-links {
   $bp-links-go-inline: 29rem;
 
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 8rem;
 
   @media (min-width: $bp-col-4-to-12) {
     @include mixins.twelve-col-grid;
-
-    margin-top: 12rem;
   }
 
   &__left {
@@ -47,7 +45,7 @@
     align-items: center;
 
     @media (min-width: $bp-links-go-inline) {
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: flex-end;
     }
   }
