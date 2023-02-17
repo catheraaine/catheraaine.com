@@ -2,9 +2,11 @@ import { GithubSVG, LinkedInSVG, SparkboxSVG } from '.';
 
 export const SocialLinks = () => {
   return (
-    <section id="contact" className="social-links">
-      <h2 className="social-links__heading">Get in Touch</h2>
-      <div className="social-links__links">
+    <section id="contact" className="social-links" aria-label="contact links">
+      <div aria-hidden="true" className="social-links__left">
+        <img src="images/annie-spratt-peonies2.jpg" alt="" />
+      </div>
+      <div className="social-links__links social-links__right">
         <a href="https://github.com/catheraaine"className="social-links__link">
           <GithubSVG />
           <div>Github</div>

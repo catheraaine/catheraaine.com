@@ -1,4 +1,4 @@
-import { PageHeader, Navigation, SocialLinks, PageBreak } from "@/components";
+import { PageHeader, Navigation, SocialLinks } from "@/components";
 
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
       <div className="page">
         <PageHeader />
         <main>
-          <PageBreak />
           <SocialLinks />
         </main>
       </div>

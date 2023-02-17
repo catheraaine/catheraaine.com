@@ -1,15 +1,42 @@
 @use 'mixins';
 
 .social-links {
-  $bp-links-go-inline: 54rem;
+  $bp-links-go-inline: 29rem;
 
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 8rem;
 
-  &__heading {
-    font-family: $font-accent;
-    font-size: 2rem;
-    margin-bottom: 3.5rem;
+  @media (min-width: $bp-col-4-to-12) {
+    @include mixins.twelve-col-grid;
+
+    margin-top: 12rem;
+  }
+
+  &__left {
+    display: none;
+
+    @media (min-width: $bp-col-4-to-12) {
+      @include mixins.holographic-border($border-size: 2px);
+
+      border-radius: $border-radius-top;
+      display: block;
+      grid-column: 1 / span 4;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $border-radius-top;
+        position: relative;
+        top: 2rem;
+        left: 2rem;
+      }
+    }
+  }
+
+  &__right {
+    grid-column: 5 / span 8;
   }
 
   &__links {
@@ -19,7 +46,8 @@
     align-items: center;
 
     @media (min-width: $bp-links-go-inline) {
-      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
     }
   }
 
@@ -27,21 +55,38 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     margin: 1rem auto;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.25rem;
     line-height: 1;
     text-align: center;
 
     @media (min-width: $bp-links-go-inline) {
-      width: 30%;
-      padding: 0 1rem;
+      flex-direction: row;
+      text-align: left;
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-col-4-to-12) {
+      margin: 0;
     }
 
     div {
       margin-top: 1.5rem;
+      font-size: 1.25rem;
+
+      @media (min-width: $bp-links-go-inline) {
+        margin-top: 0;
+        margin-left: 1.5rem;
+        width: 100%;
+        min-width: 20rem;
+      }
+
+      @media (min-width: $bp-col-4-to-12) {
+        width: 70%;
+        font-size: 2rem;
+      }
     }
 
     svg,
@@ -49,6 +94,10 @@
       fill: $color-silvered;
       max-width: 15rem;
       transition: all 340ms ease;
+
+      @media (min-width: $bp-links-go-inline) {
+        max-width: 6.5rem;
+      }
     }
 
     &:hover,
