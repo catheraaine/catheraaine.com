@@ -1,0 +1,66 @@
+@use 'mixins';
+
+.social-links {
+  $bp-links-go-inline: 54rem;
+
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+
+  &__heading {
+    font-family: $font-accent;
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $bp-links-go-inline) {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-align: center;
+
+    @media (min-width: $bp-links-go-inline) {
+      width: 30%;
+    }
+
+    div {
+      margin-top: 1.5rem;
+    }
+
+    svg,
+    .sparkbox-svg {
+      fill: $color-silvered;
+      max-width: 15rem;
+      transition: all 340ms ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-text-accent;
+      text-decoration: none;
+
+      svg,
+      .sparkbox-svg {
+        fill: url("#holo-gradient");
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
+}

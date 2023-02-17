@@ -2,14 +2,21 @@
 
 .page-header {
   $bp-name-goes-inline: 39.375rem;
+  $bp-image-grows-first: 31.25rem;
 
   @include mixins.twelve-col-grid;
 
   grid-template-rows: repeat(2, 1fr);
-  margin-top: 2rem;
+  margin: 3rem 0;
+
+  @media (min-width: $bp-image-grows-first) {
+    grid-template-rows: 2fr 1fr;
+  }
 
   @media (min-width: $bp-col-4-to-12) {
     grid-template-rows: repeat(1, 1fr);
+    margin-top: 0;
+    margin-bottom: 6rem;
   }
 
   &__bottom-left {
@@ -67,7 +74,7 @@
       display: block;
     }
 
-    @media (min-width: 31.25rem) {
+    @media (min-width: $bp-image-grows-first) {
       width: 25rem;
       height: 27rem;
 

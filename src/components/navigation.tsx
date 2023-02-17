@@ -3,7 +3,7 @@ export const Navigation = () => {
     <nav className="navigation">
       <a href="#" className="navigation__link">About</a>
       <span className="navigation__spacer" aria-hidden="true">♥</span>
-      <a href="#" className="navigation__link">Contact</a>
+      <a href="#contact" className="navigation__link">Contact</a>
     </nav>
   )
 };

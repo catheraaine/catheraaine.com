@@ -16,7 +16,7 @@
 }
 
 @mixin custom-focus() {
-  &:focus {
+  &:focus-visible {
     outline-offset: 0.25rem;
     outline: thick double $color-focus;
   }
