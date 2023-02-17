@@ -94,6 +94,7 @@
       fill: $color-silvered;
       max-width: 15rem;
       transition: all 340ms ease;
+      width: 100%;
 
       @media (min-width: $bp-links-go-inline) {
         max-width: 6.5rem;
