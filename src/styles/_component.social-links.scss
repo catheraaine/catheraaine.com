@@ -31,13 +31,13 @@
     margin: 1rem auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
     font-size: 1.25rem;
     line-height: 1;
     text-align: center;
 
     @media (min-width: $bp-links-go-inline) {
       width: 30%;
+      padding: 0 1rem;
     }
 
     div {
