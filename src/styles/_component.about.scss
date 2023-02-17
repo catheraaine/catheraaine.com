@@ -1,0 +1,44 @@
+.about {
+  $bp-text-is-off-image: 82rem;
+  $bp-text-is-separate-section: 36.75rem;
+
+  margin: 3rem auto;
+  min-width: 20rem;
+  width: unset;
+  background-image: url("/images/annie-spratt-peonies1.jpg");
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: screen;
+
+  @media (min-width: $bp-text-is-separate-section) {
+    padding: 3rem;
+  }
+
+  @media (min-width: $bp-text-is-off-image) {
+    margin: 8rem auto;
+    padding: 4rem;
+  }
+
+  &__text {
+    background-color: rgb($color-background, 60%);
+    padding: 4rem 2rem;
+    margin: auto;
+    width: fit-content;
+
+    @media (min-width: $bp-text-is-separate-section) {
+      margin: auto 0;
+    }
+
+    @media (min-width: $bp-text-is-off-image) {
+      color: $color-text-primary;
+      border-radius: $border-radius-left-top;
+      padding: 2.5rem;
+      background-color: rgb($color-blush, 8%);
+    }
+  }
+
+  p {
+    max-width: 24ch;
+    max-width: 48ch;
+  }
+}
