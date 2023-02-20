@@ -16,7 +16,7 @@
     display: none;
 
     @media (min-width: $bp-col-4-to-12) {
-      @include mixins.holographic-border($border-size: 2px);
+      @include mixins.holographic-border;
 
       border-radius: $border-radius-top;
       display: block;
