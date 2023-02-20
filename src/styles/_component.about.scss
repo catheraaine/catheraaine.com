@@ -10,6 +10,10 @@
   background-size: cover;
   mix-blend-mode: screen;
 
+  @media (min-width: $bp-col-4-to-12) {
+    margin-top: 6rem;
+  }
+
   @media (min-width: $bp-text-is-separate-section) {
     padding: 3rem;
   }
