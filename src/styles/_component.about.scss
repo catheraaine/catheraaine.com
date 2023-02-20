@@ -1,7 +1,10 @@
+@use "sass:color";
+
 .about {
   $bp-text-is-off-image: 82rem;
   $bp-text-is-separate-section: 36.75rem;
 
+  border-radius: $border-radius-left-top;
   margin: 3rem auto;
   min-width: 20rem;
   width: unset;
@@ -16,16 +19,22 @@
 
   @media (min-width: $bp-text-is-separate-section) {
     padding: 3rem;
+    border-radius: 0;
   }
 
   @media (min-width: $bp-text-is-off-image) {
     margin: 8rem auto;
     padding: 4rem;
+    display: flex;
+    align-items: center;
+    min-height: 28rem;
   }
 
   &__text {
-    background-color: rgb($color-background, 60%);
-    padding: 4rem 2rem;
+    background-color: rgb(color.mix($color-background, $color-blush, 70%), 60%);
+    backdrop-filter: blur(1rem);
+    border-radius: $border-radius-left-top;
+    padding: 2.5rem;
     margin: auto;
     width: fit-content;
 
@@ -35,7 +44,6 @@
 
     @media (min-width: $bp-text-is-off-image) {
       color: $color-text-primary;
-      border-radius: $border-radius-left-top;
       padding: 2.5rem;
       background-color: rgb($color-blush, 8%);
     }
@@ -44,5 +52,19 @@
   p {
     max-width: 24ch;
     max-width: 48ch;
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: $color-text-accent;
+      text-decoration: underline;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-gilded;
+      text-decoration: none;
+    }
   }
 }

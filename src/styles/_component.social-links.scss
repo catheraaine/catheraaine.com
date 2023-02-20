@@ -8,6 +8,7 @@
 
   @media (min-width: $bp-col-4-to-12) {
     @include mixins.twelve-col-grid;
+
     margin-top: 7rem;
   }
 
