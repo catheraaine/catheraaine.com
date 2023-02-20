@@ -6,3 +6,4 @@ export { GithubSVG } from './svg/github-svg';
 export { LinkedInSVG } from './svg/linkedin-svg';
 export { SparkboxSVG } from './svg/sparkbox-svg';
 export { About } from './about';
+export { Footer } from './footer';

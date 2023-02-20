@@ -1,4 +1,4 @@
-import { PageHeader, Navigation, SocialLinks, About } from "@/components";
+import { PageHeader, Navigation, SocialLinks, About, Footer } from "@/components";
 
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
           <About />
           <SocialLinks />
         </main>
+        <Footer />
       </div>
     </>
   )
