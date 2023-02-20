@@ -9,7 +9,7 @@ export const SocialLinks = () => {
       <div className="social-links__links social-links__right">
         <a href="https://github.com/catheraaine"className="social-links__link">
           <GithubSVG />
-          <div>Github</div>
+          <div>GitHub</div>
         </a>
         <a href="https://foundry.sparkbox.com/foundry/author/catherine_meade" aria-label="Catherine's Page on the Sparkbox Blog" className="social-links__link">
           <SparkboxSVG />
