@@ -9,7 +9,7 @@ const FULLSTACK_EMBED = () => (
 export const FEATURED_WORKS_DATA = [
   {
     id: 'feature1',
-    publication: "JS Conf Iceland 2018",
+    publication: "JSConf Iceland 2018",
     articleTitle: "Github Pull Requests for Everyone",
     youtubeEmbed: JSCONF_EMBED,
     description: "I had the great honor of being selected for JSConf Iceland in 2018. In this talk, I discuss several tips for creating pull requests that are easily reviewable for all people who build the web.",
@@ -19,7 +19,7 @@ export const FEATURED_WORKS_DATA = [
   },
   {
     id: 'feature3',
-    publication: "Shopify Partner Blog",
+    publication: "Shopify Partners Blog",
     articleTitle: "4 Easy Ways to Deploy Your Website or App",
     description: "In this article, we will cover four happy deploy paths to getting your website online, and the benefits and costs of each plan. I'll also discuss one potential integration plan for your Shopify app environment. No matter your skill level or experience, at least one of these paths should work for you.",
     imageSource: "/images/shopify_logo_blue.png",
@@ -41,7 +41,7 @@ export const FEATURED_WORKS_DATA = [
     id: 'feature4',
     publication: "Sparkbox Foundry",
     articleTitle: "A Lukewarm Approval of CSS-in-JS",
-    description: "CSS-in-JS can be a worthwhile tool for many projects, even from the perspective of someone who is a die-hard SCSS user. Let’s go through an overview of the CSS-in-JS and the pros and cons of using it instead of Sass.",
+    description: "CSS-in-JS can be a worthwhile tool for many projects, even from the perspective of someone who is a die-hard SCSS user. Let's go through an overview of the CSS-in-JS and the pros and cons of using it instead of Sass.",
     imageSource: "/images/css-in-js.png",
     linkURL: "https://foundry.sparkbox.com/foundry/css_in_js_overview_css_in_js_pros_and_cons",
     linkLabel: "Read about CSS-in-JS and the Pros and Cons on the Sparkbox Foundry",
