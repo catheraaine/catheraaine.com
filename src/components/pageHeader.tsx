@@ -1,7 +1,3 @@
-interface PAGE_HEADER_PROPS {
-  pageTitle: string,
-}
-
 export const PageHeader = () => {
   return (
     <header className="page-header">

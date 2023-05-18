@@ -7,3 +7,4 @@ export { LinkedInSVG } from './svg/linkedin-svg';
 export { SparkboxSVG } from './svg/sparkbox-svg';
 export { About } from './about';
 export { Footer } from './footer';
+export { FeaturedWorks } from './featuredWorks';
