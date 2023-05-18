@@ -29,8 +29,8 @@ export const ArticleBlurb = ({
         }
       </div>
       <div className="article-blurb__right">
-        <h3>{publication}</h3>
-        <h4><em>{articleTitle}</em></h4>
+        <h3>{articleTitle}</h3>
+        <h4>{publication}</h4>
         {description && (<p>{description}</p>)}
         <a href={linkURL} aria-label={linkLabel}>{linkText}</a>
       </div>

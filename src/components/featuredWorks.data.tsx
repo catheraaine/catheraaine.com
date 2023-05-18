@@ -39,7 +39,7 @@ export const FEATURED_WORKS_DATA = [
   },
   {
     id: 'feature4',
-    publication: "Sparkbox Foundry",
+    publication: "The Sparkbox Foundry",
     articleTitle: "A Lukewarm Approval of CSS-in-JS",
     description: "CSS-in-JS can be a worthwhile tool for many projects, even from the perspective of someone who is a die-hard SCSS user. Let's go through an overview of the CSS-in-JS and the pros and cons of using it instead of Sass.",
     imageSource: "/images/css-in-js.png",
