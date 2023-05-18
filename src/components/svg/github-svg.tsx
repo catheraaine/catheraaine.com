@@ -4,23 +4,23 @@ export const GithubSVG = () => {
       {/* this svg block is for the hover gradient effect on all svgs */}
       <defs>
         <linearGradient id="holo-gradient" x1="0" y1=".51" x2="1" y2=".29">
-          <stop offset="0%" stop-color="#dee6ee"/>
-          <stop offset="8.67%" stop-color="#d7deec"/>
-          <stop offset="26%" stop-color="#d6c9ed"/>
-          <stop offset="30.67%" stop-color="#e3c4eb"/>
-          <stop offset="40%" stop-color="#e9c3d5"/>
-          <stop offset="43.67%" stop-color="#ebc8cb"/>
-          <stop offset="51%" stop-color="#efd39f"/>
-          <stop offset="55.33%" stop-color="#d7e688"/>
-          <stop offset="64%" stop-color="#b6fbe1"/>
-          <stop offset="66.67%" stop-color="#8bf8fa"/>
-          <stop offset="72%" stop-color="#d7d8f9"/>
-          <stop offset="76.33%" stop-color="#f4d5f9"/>
-          <stop offset="85%" stop-color="#fae2e0"/>
-          <stop offset="87.67%" stop-color="#fae7e1"/>
-          <stop offset="93%" stop-color="#faf1e4"/>
-          <stop offset="95.33%" stop-color="#f9f3ea"/>
-          <stop offset="100%" stop-color="#f9f7f4"/>
+          <stop offset="0%" stopColor="#dee6ee"/>
+          <stop offset="8.67%" stopColor="#d7deec"/>
+          <stop offset="26%" stopColor="#d6c9ed"/>
+          <stop offset="30.67%" stopColor="#e3c4eb"/>
+          <stop offset="40%" stopColor="#e9c3d5"/>
+          <stop offset="43.67%" stopColor="#ebc8cb"/>
+          <stop offset="51%" stopColor="#efd39f"/>
+          <stop offset="55.33%" stopColor="#d7e688"/>
+          <stop offset="64%" stopColor="#b6fbe1"/>
+          <stop offset="66.67%" stopColor="#8bf8fa"/>
+          <stop offset="72%" stopColor="#d7d8f9"/>
+          <stop offset="76.33%" stopColor="#f4d5f9"/>
+          <stop offset="85%" stopColor="#fae2e0"/>
+          <stop offset="87.67%" stopColor="#fae7e1"/>
+          <stop offset="93%" stopColor="#faf1e4"/>
+          <stop offset="95.33%" stopColor="#f9f3ea"/>
+          <stop offset="100%" stopColor="#f9f7f4"/>
         </linearGradient>
       </defs>
       {/* end svg block */}
