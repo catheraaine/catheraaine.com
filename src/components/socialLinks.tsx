@@ -1,4 +1,4 @@
-import { GithubSVG, LinkedInSVG, SparkboxSVG } from '.';
+import { GithubSVG, LinkedInSVG, SparkboxSVG, MastodonSVG } from '.';
 
 export const SocialLinks = () => {
   return (
@@ -18,6 +18,10 @@ export const SocialLinks = () => {
         <a href="https://www.linkedin.com/in/catheraaine/" aria-label="Catherine's LinkedIn Account" className="social-links__link">
           <LinkedInSVG />
           <div>LinkedIn</div>
+        </a>
+        <a rel="me" href="https://mastodon.social/@catheraaine"  aria-label="Catherine's LinkedIn Account" className="social-links__link">
+          <MastodonSVG />
+          <div>Mastodon</div>
         </a>
       </div>
     </section>
