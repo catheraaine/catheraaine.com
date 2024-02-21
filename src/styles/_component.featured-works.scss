@@ -13,16 +13,6 @@
   background-size: cover;
   mix-blend-mode: screen;
 
-  @media (min-width: $bp-text-is-separate-section) {
-    padding: 3rem;
-    border-radius: 0;
-  }
-
-  @media (min-width: $bp-col-4-to-12) {
-    border-radius: $border-radius-right-top;
-    padding: 0;
-  }
-
   &__content {
     background-color: rgb(color.mix($color-background, $color-blush, 70%), 60%);
     backdrop-filter: blur(1rem);
