@@ -6,7 +6,31 @@ const FULLSTACK_EMBED = () => (
   <iframe src="https://www.youtube-nocookie.com/embed/RtOhCtvHEsg" title="Catherine at Full stack NYC in YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
 );
 
+const UNCONF_EMBED = () => (
+  <iframe src="https://www.youtube-nocookie.com/embed/PKU9edIojSQ?si=5PjXM0phGelLZ7c0" title="Catherine at Unconference in YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
+);
+
 export const FEATURED_WORKS_DATA = [
+  {
+    id: 'feature6',
+    publication: "UnConference",
+    articleTitle: "Creating a Technical Foundation",
+    youtubeEmbed: UNCONF_EMBED,
+    description: "I gave this talk at 2024's Unconference: Embracing the Power of the MVP. When you plan an MVP, you know you need it to be stable and secure in the near term, but what you build today should be flexible enough to enable future growth. I talk about how (and make time travel jokes).",
+    linkURL: "https://www.youtube.com/watch?v=PKU9edIojSQ",
+    linkLabel: "Watch Creating a Technical Foundation for Everyone on Youtube",
+    linkText: "Watch the video on Sparkbox's Youtube"
+  },
+  {
+    id: 'feature5',
+    publication: "The Sparkbox Foundry",
+    articleTitle: "What Even Are Dragging Movements?",
+    description: "Understanding and implementing the Web Accessibility Content Guidelines (WCAG) can be difficult for even trained experts. Catherine helps us with WCAG 2.2′s newest guideline by explaining the requirements and providing examples of how to improve our user interfaces.",
+    imageSource: "/images/what-a-drag.png",
+    linkURL: "https://sparkbox.com/foundry/understanding_implementing_wcag_dragging_movements_accessibility",
+    linkLabel: "Read What Even Are Dragging Movements on the Sparkbox Foundry",
+    linkText: "Figure out dragging movements on the Sparkbox Foundry"
+  },
   {
     id: 'feature1',
     publication: "JSConf Iceland 2018",
