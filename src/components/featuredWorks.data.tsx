@@ -57,7 +57,7 @@ export const FEATURED_WORKS_DATA = [
     articleTitle: "Keeping Subscribers Engaged in Your Design System",
     youtubeEmbed: FULLSTACK_EMBED,
     description: "At FullStack NYC, I presented a talk describing some of my experiences working for large Design System teams. This is one of my favorite talks, both due to its frame story and how the content remains relevant in the long term.",
-    linkURL: "https://foundry.sparkbox.com/foundry/making_design_systems_engaging_session_from_fullstack_NYC",
+    linkURL: "https://sparkbox.com/foundry/making_design_systems_engaging_session_from_fullstack_NYC",
     linkLabel: "Read about Keeping Subscribers Engaged in Your Design System and watch the video on the Sparkbox Foundry",
     linkText: "Read the presentation writeup on the Sparkbox Foundry"
   },
@@ -67,7 +67,7 @@ export const FEATURED_WORKS_DATA = [
     articleTitle: "A Lukewarm Approval of CSS-in-JS",
     description: "CSS-in-JS can be a worthwhile tool for many projects, even from the perspective of someone who is a die-hard SCSS user. Let's go through an overview of the CSS-in-JS and the pros and cons of using it instead of Sass.",
     imageSource: "/images/css-in-js.png",
-    linkURL: "https://foundry.sparkbox.com/foundry/css_in_js_overview_css_in_js_pros_and_cons",
+    linkURL: "https://sparkbox.com/foundry/css_in_js_overview_css_in_js_pros_and_cons",
     linkLabel: "Read about CSS-in-JS and the Pros and Cons on the Sparkbox Foundry",
     linkText: "Read about CSS-in-JS on the Sparkbox Foundry"
   },
